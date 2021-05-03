@@ -1,0 +1,351 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lobster&family=PT+Serif:ital,wght@0,700;1,400;1,700&family=Pacifico&family=Staatliches&display=swap");
+/* 1687a7 */
+.cart-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #353535;
+}
+.cart-contents {
+  padding: 5% 10%;
+}
+.logo-main-cart {
+  width: 50%;
+}
+.logo-main-cart h3::after {
+  content: "SHOE SHOPER";
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  color: rgb(245, 244, 244);
+  font-size: 1.5rem;
+  padding-left: 0.7rem;
+  position: relative;
+  transition: 0.2s;
+}
+.logo-main-cart h3:hover:after {
+  color: rgb(255, 255, 255);
+  content: "Go home";
+}
+.cart-nav-bar {
+  width: 100%;
+  min-height: 6rem;
+  background-color: #d3e0ea42;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.cart-logo-main {
+  padding: 0 0 0 2rem;
+}
+.brand img {
+  width: 80px;
+}
+
+.cart-items {
+  color: white;
+  margin: 2rem;
+  width: 30rem;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.801);
+  position: relative;
+  border-radius: 4px;
+}
+.cart-items img {
+  width: 200px;
+  height: 100%;
+  object-fit: scale-down;
+  position: relative;
+  bottom: 0rem;
+}
+.item-details {
+  font-family: "Poppins";
+  color: #000;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 14rem;
+}
+.item-details h2 {
+  margin: 1rem 0 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.item-details h2:hover {
+  color: white;
+}
+.price-quan {
+  display: flex;
+  align-items: center;
+  justify-content: space-center;
+}
+.price-quan h4 {
+  font-weight: 400;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+
+  margin-left: 1rem;
+}
+.quantity span {
+  margin: 0 1rem;
+}
+
+.add-icon,
+.minus-icon {
+  padding: 0.3rem;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.item-btns {
+  margin-top: 0.2rem;
+}
+.item-btns button {
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 400;
+  outline: none;
+  padding: 0.3rem 0.8rem;
+  background: transparent;
+}
+.delete-icon {
+  border: 0;
+  color: red;
+  margin: 0 0.3rem;
+  transition: all 0.2s;
+}
+.delete-icon:hover {
+  background-color: red;
+  color: white;
+}
+.buy-icon {
+  border: 1px solid white;
+  transition: all 0.2s;
+}
+.buy-icon:hover {
+  background-color: #000;
+  color: white;
+}
+.mapped-cart {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: rgb(253, 253, 253);
+}
+.bars-icon {
+  position: fixed;
+  z-index: 80000;
+  right: 8rem;
+  top: 2.2rem;
+  transition: all 0.5s;
+  padding: 1rem;
+}
+.all-btn h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fdf9f9;
+  font-weight: 500;
+  padding-right: 3rem;
+}
+.all-btn {
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+  width: 100%;
+}
+.all-btn button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  position: relative;
+  right: 2rem;
+  cursor: pointer;
+  outline: 0;
+  padding: 0.8rem 0.6rem;
+}
+.buy-all-btn {
+  margin-right: 0.5rem;
+  color: rgba(255, 255, 255, 0.877);
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid rgb(252, 252, 252);
+}
+.buy-all-btn:hover {
+  background-color: rgb(228, 51, 51);
+  color: white;
+}
+.empty-cart-btn {
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+}
+.empty-cart-btn:hover {
+  background-color: #ffffff;
+}
+.empty-cart {
+  margin-top: 4rem;
+  text-decoration: none;
+}
+.empty-cart h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 0.85rem 0 0 0;
+}
+.empty-cart p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.empty-cart a {
+  text-decoration: none;
+}
+@media screen and (max-width: 647px) {
+  .logo-main-cart {
+    width: 60%;
+  }
+  .logo-main-cart h3 {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .cart-contents {
+    padding: 5%;
+  }
+  .mapped-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bars-icon {
+    right: 3rem;
+    top: 1.5rem;
+  }
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .all-btn button {
+    font-weight: 500;
+    position: relative;
+    right: 1rem;
+    padding: 0.6rem;
+    font-size: 0.75rem;
+    margin-bottom: 0rem;
+  }
+
+  .quantity span {
+    margin: 0 1rem;
+  }
+  .cart-items {
+    margin: 3rem 0;
+    width: 80%;
+    height: 10rem;
+  }
+  .cart-items img {
+    width: 150px;
+    height: 100%;
+    object-fit: scale-down;
+  }
+  .item-details {
+    right: 0;
+    top: 0;
+    left: 10rem;
+  }
+}
+@media screen and (max-width: 505px) {
+  .logo-main-cart {
+    width: 18rem;
+  }
+  .logo-main-cart h3::after {
+    font-size: 1rem;
+  }
+  .bars-icon {
+    right: 3rem;
+    top: 1.5rem;
+  }
+  .cart-logo-main {
+    padding: 0 0 0 1rem;
+  }
+  .brand img {
+    width: 60px;
+  }
+  .all-btn {
+    padding-right: 0rem;
+
+    width: 100%;
+  }
+
+  .all-btn h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-right: 1.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+  }
+
+  .all-btn button {
+    font-weight: 500;
+    position: relative;
+    right: 1rem;
+    padding: 0.4rem;
+    font-size: 0.65rem;
+    margin-bottom: 1rem;
+  }
+
+  /* end */
+  .item-btns {
+    margin-top: 0.2rem;
+  }
+  .price-quan h4 {
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+
+    margin-left: 1rem;
+  }
+  .quantity span {
+    margin: 0 0rem;
+    padding: 0 0.5rem;
+  }
+  .item-details h2 {
+    font-size: 1.2rem;
+  }
+  .cart-contents {
+    padding: 15% 0;
+  }
+  .cart-items {
+    color: white;
+    margin: 1.5rem 0;
+    width: 95%;
+    min-height: 10rem;
+    background-color: rgba(255, 255, 255, 0.87);
+    position: relative;
+    border-radius: 4px;
+  }
+  .cart-items img {
+    width: 150px;
+    height: 100%;
+    object-fit: scale-down;
+  }
+  .item-btns button {
+    font-weight: 400;
+    padding: 0.3rem 0.4rem;
+  }
+}

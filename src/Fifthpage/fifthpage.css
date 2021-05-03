@@ -1,0 +1,143 @@
+/** @format */
+
+.fifthpage {
+  width: 100%;
+  min-height: 100vh;
+}
+.fifthpage-contents {
+  width: 100%;
+  height: 100%;
+}
+.images-main {
+  margin: 4rem 3rem;
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+.images-main::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, black, rgba(255, 255, 255, 0));
+  mix-blend-mode: hard-light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.images-main .text-itemss {
+  width: 100%;
+
+  position: absolute;
+  top: 11rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.852s;
+  z-index: 10;
+}
+.images-main:hover::before {
+  opacity: 1;
+}
+.images-main:hover .text-itemss {
+  opacity: 1;
+}
+.text-itemss h3 {
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.text-itemss p {
+  font-family: "Montserrat", sans-serif;
+  margin: 0.2rem 0 0.4rem;
+  color: white;
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.text-itemss h6 {
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.img-contents {
+  padding: 8% 15%;
+}
+.images-shoe {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.images-shoe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.buy-items button {
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 2rem;
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+
+  width: 100%;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.068);
+}
+.buy-items button:active {
+  transform: scale(0.8);
+}
+.buy-items button:hover {
+  background: transparent;
+  background-color: rgb(236, 64, 64);
+  color: aliceblue;
+}
+@media screen and (max-width: 1130px) {
+  .img-contents {
+    padding: 8%;
+  }
+  .images-shoe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .images-main {
+    margin: 4rem 1rem;
+    width: 250px;
+    height: 250px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 614px) {
+  .img-contents {
+    padding: 8% 0;
+  }
+  .images-shoe {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .images-shoe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .images-main {
+    margin: 4rem 2rem;
+    width: 400px;
+    height: 250px;
+    position: relative;
+  }
+}

@@ -1,0 +1,330 @@
+/** @format */
+
+.checkout-page {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  background-color: #313131;
+  padding: 1rem 0 3rem;
+}
+.checkbox-form {
+  margin: 4rem auto 0;
+  width: 80%;
+  height: 100%;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.185);
+  padding-bottom: 4rem;
+  background-color: #fcfcfc;
+}
+.checkbox-form h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e84545;
+}
+.checkout-icon {
+  padding-left: 0.5rem;
+  padding-bottom: 0.2rem;
+  font-size: 2rem;
+}
+.form-elements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin: 0 auto;
+}
+.form-elements > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+.label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem 0 0 1rem;
+}
+.section {
+  font-family: "Montserrat", sans-serif;
+  width: 12rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.form-elements input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  border: 0;
+  outline: 0;
+
+  margin: 0.5rem 0;
+  border: none;
+  background-color: rgba(63, 63, 63, 0.068);
+  border-radius: 2px;
+}
+.checkout-btns {
+  display: flex;
+  justify-content: space-around;
+}
+.checkout-btns:nth-child(odd) {
+  background: transparent;
+}
+.form-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+.form-container .payment-btn,
+.cart-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: 0;
+  outline: 0;
+  padding: 0.8rem 2rem;
+  background-color: rgb(221, 43, 43);
+  color: aliceblue;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid black;
+}
+
+.form-container button:hover {
+  background: transparent;
+  color: black;
+}
+.cart-btn {
+  background-color: rgb(0, 0, 0);
+}
+.form-elements p {
+  font-size: 0.9rem;
+  margin: 0 0 0.2rem;
+  color: rgba(255, 7, 7, 0.863);
+}
+.selection-option {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.review-contentents {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ordered-elements {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 14rem;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.123);
+  transition: all 0.3s;
+}
+
+.ordered-elements:hover {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.178);
+  color: aliceblue;
+  position: relative;
+  transition: all 0.5s;
+}
+.ordered-elements:hover::before {
+  z-index: -1;
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.13);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.ordered-elements:hover .price {
+  color: aliceblue;
+}
+.ordered-elements:hover img {
+  transform: scale(1.1);
+}
+.orderrd-img img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.ordered-elements h3 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.2rem 0 0 0;
+  text-transform: capitalize;
+}
+.ordered-elements .qauntity {
+  font-size: 0.75rem;
+  margin: 0.2rem 0;
+  color: #000;
+}
+.ordered-elements .price {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgb(230, 56, 56);
+  margin: 0.2rem 0;
+}
+.order-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.order-total h3,
+.total-price {
+  margin: 0.2rem 0;
+  color: rgb(0, 0, 0);
+}
+.order-total h3 {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 0;
+  padding-right: 0.5rem;
+}
+.order-total p {
+  color: rgb(247, 37, 37);
+  font-weight: 500;
+}
+.order-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+.order-btns .payment,
+.back-btn {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.85rem 1.5rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.4s ease;
+}
+.payment {
+  font-weight: 550;
+  background-color: red;
+  color: white;
+}
+.back-btn {
+  background-color: black;
+  color: white;
+}
+.payment:hover,
+.back-btn:hover {
+  background: transparent;
+
+  color: black;
+}
+.card-layout {
+  width: 20rem;
+  margin: 0 auto;
+}
+.payment-content h6 {
+  background-color: rgb(243, 243, 243);
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+.payment-content .card-p {
+  margin: 0.5rem 0 2.5rem;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+.card {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(240, 240, 240, 0.911);
+  padding: 1rem 2rem;
+}
+@media screen and (max-width: 928px) {
+  .form-elements > div {
+    display: flex;
+
+    width: 60%;
+  }
+  .form-elements {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    margin: 0 auto;
+  }
+  .selection-option {
+    grid-template-columns: 1fr;
+  }
+  .ordered-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: rgb(236, 236, 236);
+  }
+  .review-contentents {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+  }
+  .ordered-elements h3 {
+    width: 20rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0.2rem 0 0 0;
+  }
+  .ordered-elements p {
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .review-page h2 {
+    font-weight: 500;
+
+    font-size: 1.8rem;
+    margin: 0.5rem 0rem 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .selection-option {
+    padding: 0 2rem;
+  }
+  .form-container h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .checkbox-form h3 {
+    font-size: 1.2rem;
+  }
+  .form-elements > div {
+    display: flex;
+
+    width: 70%;
+  }
+  .checkbox-form {
+    margin: 0.5rem auto 0;
+    width: 95%;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.185);
+    padding-bottom: 4rem;
+  }
+}

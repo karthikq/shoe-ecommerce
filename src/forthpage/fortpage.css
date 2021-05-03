@@ -1,0 +1,149 @@
+/** @format */
+
+.forthpage-container {
+  width: 100%;
+  height: 100vh;
+}
+.fp-contents {
+  width: 100%;
+  height: 100%;
+  background-color: #a6aab6;
+  position: relative;
+}
+.shoe-3 {
+  width: 50%;
+  height: 100vh;
+}
+.shoe-3 img {
+  width: 90%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.fp-text {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  text-align: right;
+}
+.price-details {
+  margin: 1rem 0;
+  font-size: 1.35rem;
+  color: rgb(196, 53, 35);
+}
+.fp-text h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
+
+  margin: 0;
+  color: white;
+}
+.fp-text span {
+  margin: 0.5rem 0 0 0;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 20rem;
+
+  color: rgba(241, 241, 241, 0.685);
+}
+.fp-text button {
+  margin-left: 4rem;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 2rem;
+  outline: none;
+  border: 2px solid white;
+  background: transparent;
+  width: 80%;
+  transition: 0.35s;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.068);
+}
+.fp-text button:active {
+  transform: scale(0.8);
+}
+.fp-text button:hover {
+  background-color: rgb(236, 64, 64);
+  color: aliceblue;
+}
+@media screen and (max-width: 786px) {
+  .fp-text {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translateX(-10%);
+  }
+  .fp-text h2 {
+    font-size: 2.6rem;
+    margin: 0;
+  }
+  .fp-text span {
+    display: inline-block;
+    padding: 0;
+    margin: 0.8rem 0;
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.2;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.945);
+  }
+}
+@media screen and (max-width: 614px) {
+  .forthpage-container {
+    width: 100%;
+    height: 60vh;
+  }
+  .shoe-3 {
+    width: 50%;
+    height: 60vh;
+  }
+
+  .fp-text {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    width: 45%;
+    text-align: right;
+  }
+  .fp-text h2 {
+    width: 100%;
+    font-size: 1.95rem;
+    margin: 0;
+  }
+  .fp-text span {
+    display: inline-block;
+    padding: 0;
+    margin: 0.8rem 0;
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    width: 100%;
+
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.945);
+  }
+  .fp-text button {
+    margin-left: 0;
+
+    padding: 0.8rem 2rem;
+
+    width: 100%;
+    font-size: 0.65rem;
+    font-weight: 500;
+
+    margin-top: 3rem;
+  }
+  .price-details {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}

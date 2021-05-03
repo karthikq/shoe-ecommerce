@@ -1,0 +1,222 @@
+/** @format */
+
+.all-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #313131;
+}
+
+.lottie-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.all-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.all-brand {
+  display: flex;
+  align-items: center;
+}
+.all-shoe-padding {
+  padding: 2% 15%;
+}
+.all-main-nav-bar {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-main-nav-bar .all-cart {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.icon-cart-1 {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.sticky {
+  position: fixed;
+  z-index: 20;
+  transition: 0.5s ease-in-out;
+  animation: opacity 1s linear;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.all-brand h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 0.2rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  transition: all 0.35s;
+}
+.all-brand h2:hover {
+  color: #e0e0e0;
+}
+.shoe-box {
+  margin: 0 auto;
+  margin: 1.5rem;
+  width: 15rem;
+  height: 17.8rem;
+  background-color: #ffffffe7;
+  position: relative;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.164);
+}
+.all-img {
+  width: 180px;
+  height: 120px;
+  margin: 0.7rem auto;
+  transition: 0.5s;
+  position: relative;
+}
+.shoe-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.shoe-box .all-img:hover img {
+  transform: scale(1.1);
+}
+.all-text h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.8px;
+  color: #000000;
+  margin: 0.6rem 0 0.2rem;
+}
+.all-text .all-price {
+  font-family: "Montserrat", sans-serif;
+  margin: 0.3rem 0;
+  font-weight: 600;
+  color: rgb(209, 68, 68);
+}
+.all-text .qauntity-item p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: rgba(49, 49, 49, 0.644);
+}
+.shoe-box button {
+  margin: 0.8rem auto 0;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.4rem 1.2rem;
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+  background: transparent;
+  color: #080808;
+  width: 70%;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.068);
+}
+.shoe-box button:hover {
+  background-color: rgb(247, 65, 65);
+  color: white;
+}
+@media screen and (max-width: 1257px) {
+  .all-shoe-padding {
+    padding: 2% 8%;
+  }
+}
+@media screen and (max-width: 1039px) {
+  .all-shoe-padding {
+    padding: 2% 4%;
+  }
+  .all-main-nav-bar {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sticky {
+    right: 3rem;
+  }
+  .all-content {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 629px) {
+  .all-shoe-padding {
+    padding: 2%;
+  }
+  .all-main-nav-bar {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .all-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sticky {
+    right: 2rem;
+  }
+  .shoe-box {
+    margin: 0 auto;
+    margin: 1.5rem;
+    width: 14rem;
+    height: 17.8rem;
+    background-color: #d5ecec;
+    position: relative;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 30px 15px rgba(0, 0, 0, 0.144);
+  }
+}
+@media screen and (max-width: 629px) {
+  .all-brand h2 {
+    text-align: center;
+
+    font-size: 1.4rem;
+  }
+  .sticky {
+    right: 1rem;
+  }
+  .all-shoe-padding {
+    padding: 2%;
+  }
+  .all-main-nav-bar {
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+  .all-content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .shoe-box {
+    margin: 0 auto;
+    margin: 1.5rem;
+    width: 20rem;
+    height: 17.8rem;
+    background-color: #d5ecec;
+    position: relative;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 30px 15px rgba(0, 0, 0, 0.144);
+  }
+}

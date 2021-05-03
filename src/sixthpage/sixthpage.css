@@ -1,0 +1,95 @@
+/** @format */
+
+.sixth-container {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.sixth-shoe-images {
+  width: 33%;
+  height: 100vh;
+  position: relative;
+}
+
+.sixth-shoe-images2 {
+  display: flex;
+  justify-content: space-around;
+}
+.sixth-shoe-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.sixth-shoe-images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #221c1c2c 0%, #00ccffe1 100%);
+  opacity: 0;
+  transition: all 1.5s ease;
+  z-index: 12;
+}
+.sixth-shoe-images:hover::before {
+  opacity: 1;
+}
+.sixth-shoe-images:hover .sixth-text {
+  opacity: 1;
+  top: 50%;
+}
+.sixth-text {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  color: white;
+  text-align: center;
+  opacity: 0;
+
+  transition: all 0.85s ease-in-out;
+}
+.sixth-text h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+.sixth-text p {
+  margin: 0.5rem 0 1rem;
+  font-weight: 300;
+  font-size: 0.95rem;
+  padding: 0 0.5rem;
+}
+.sixth-text button {
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 2rem;
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+
+  background-color: rgb(236, 64, 64);
+  width: 50%;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.068);
+}
+.sixth-text button:active {
+  transform: scale(0.8);
+}
+.sixth-text button:hover {
+  background: transparent;
+  color: aliceblue;
+}

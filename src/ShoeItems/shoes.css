@@ -1,0 +1,147 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+.shoe-items-container {
+  width: 100%;
+  height: 60vh;
+  background: url("https://images.unsplash.com/photo-1585147877975-6acd0a929a46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.shoe-items-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.432);
+  z-index: 1;
+}
+.shoe-items-contents {
+  position: absolute;
+  z-index: 33;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .shoe-items-padding {
+  padding: 10% 14%;
+} */
+/* .shoe-items-image {
+  width: 500px;
+  height: 600px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.185);
+}
+.shoe-items-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.shoe-item-text {
+  font-family: "Montserrat", sans-serif;
+
+  margin-top: 1rem;
+}
+.shoe-item-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.shoe-link {
+  width: 5rem;
+  margin: 0 auto;
+}
+.arrow {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: left;
+  color: white;
+}
+.arrow:hover {
+  transform: translateX(5px);
+  color: rgb(214, 214, 214);
+}
+.shoe-item-text button {
+  margin-bottom: 8rem;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.8rem 2rem;
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+
+  width: 90%;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.35s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.068);
+}
+.shoe-item-text button:hover {
+  background-color: rgb(247, 65, 65);
+  color: white;
+}
+.lottie-1 {
+  margin-right: 14rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1257px) {
+  /* .shoe-items-padding {
+    padding: 10%;
+  }
+  .shoe-items-image {
+    width: 300px;
+    height: 500px;
+  } */
+}
+@media screen and (max-width: 974px) {
+  .lottie-1 {
+    margin-right: 0rem;
+    cursor: pointer;
+  }
+  /* .shoe-items-contents {
+    display: flex;
+    flex-direction: column;
+  }
+  .shoe-items-image {
+    width: 250px;
+    height: 400px;
+  } */
+  .shoe-item-text {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 20rem;
+  }
+  .shoe-item-text h2 {
+    font-size: 1.8rem;
+
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    padding: 2rem 0 0;
+  }
+  /* .shoe-item-text button {
+    margin: 0 auto;
+    width: 80%;
+  } */
+}
+@media screen and (max-width: 400px) {
+  .shoe-item-text h2 {
+    font-size: 1.6rem;
+
+    letter-spacing: 1px;
+    padding: 2rem 0 0.5rem;
+  }
+  /* .shoe-item-text button {
+    margin: 0 auto 5rem;
+    width: 80%;
+  } */
+}
